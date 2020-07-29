@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+}
+.loading{
+    background: transparent;
+    border: 5px solid transparent;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    border-left-color: white;
+    border-top-color: white;
+    border-bottom-color: white;
+    animation: load 1s linear infinite;
+}
+@keyframes load{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
